@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "Write as many numbers as you want but remember a zero is to terminate" << endl;
+	
+
+	int current = 0;
+	cin >> current;
+	
+	int largest = current, smallest = current;
+
+	for(;current != 0;cin >> current) {
+
+		if(current < smallest) {
+			smallest  = current;
+		}
+
+		if(current > largest) {
+			largest = current;
+		}
+	}
+
+	cout << "The largest number you wrote is " << largest << endl;
+	cout << "The smallest number you wrote is " << smallest << endl;
+
+	return 0;
+}
