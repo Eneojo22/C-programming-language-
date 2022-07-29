@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	double first, difference;
+	int numbers;
+
+	cout << "First term = " << flush;
+	cin  >> first;
+
+	cout << "Common Difference = " << flush;
+	cin  >> difference;
+
+	cout << "Number of terms: " << flush;
+	cin  >> numbers;
+
+
+	for(int i = 1; i <= numbers; i++) {
+		float current = first + ((i - 1) * difference);
+		cout << "The " << i <<  "th is " << current << endl;
+	}
+
+	return 0;
+}
